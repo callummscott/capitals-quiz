@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS capitals (
+	id INTEGER PRIMARY KEY,
+	country VARCHAR(40) UNIQUE,
+	capital VARCHAR(40)
+);

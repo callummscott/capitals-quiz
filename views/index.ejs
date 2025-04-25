@@ -1,0 +1,12 @@
+<%- include("head.ejs") %>
+  <body id="app">
+
+    <% if (locals.country) { %>
+      <%- include("game.ejs") %>
+    <% } else if (locals.capital) { %>
+      <%- include("end.ejs") %>
+    <% } %>
+
+    <script src="../script.js" async defer></script>
+  </body>
+</html>

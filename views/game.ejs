@@ -1,0 +1,15 @@
+<form class="container" action="/submit" method="post">
+  <div class="horizontal-container">
+    <h3> Total Score: <span id="score"><%= locals.totalScore ? totalScore : "0" %></span> </h3>
+  </div>
+
+  <h1><%= country %></h1>
+  <div class="answer-container">
+    <input type="text" name="answer" id="userInput" placeholder="Enter the capital" autofocus autocomplete="off">
+  </div>
+
+  <button type="submit">
+    SUBMIT
+      <span id="tick" class="checkmark">✔</span>
+  </button>
+</form>
